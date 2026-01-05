@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@theme {
+  --color-body: oklch(1 0 0);
+  --color-white: oklch(1 0 0);
+  --color-black: oklch(0.17 0 0);
+
+  --color-primary-light: oklch(94.515% 0.00355 248.553);
+  --color-primary: oklch(21.863% 0.00389 285.987);
+  --color-primary-dark: oklch(0% 0 0);
+  --color-primary-fg: oklch(100% 0.00011 271.152);
+  --color-primary-fg-light: oklch(0% 0 0);
+
+  --color-success-light: oklch(0.96 0.018 142.82);
+  --color-success: oklch(0.59 0.185 141.73);
+  --color-success-dark: oklch(0.56 0.1716 141.56);
+  --color-success-fg: oklch(0.99 0 0);
+
+  --color-danger-light: oklch(0.94 0.013 17.39);
+  --color-danger: oklch(0.64 0.1885 20.96);
+  --color-danger-dark: oklch(0.6 0.1754 20.87);
+  --color-danger-fg: oklch(0.99 0 0);
+
+  --color-warning-light: oklch(0.98 0.0248 89.21);
+  --color-warning: oklch(0.84 0.172159 84.9338);
+  --color-warning-dark: oklch(0.79 0.163399 80.5485);
+  --color-warning-fg: oklch(0.171 0.013 17.38);
+
+  --color-info-light: oklch(0.96 0.0203 224.29);
+  --color-info: oklch(0.7 0.157 238.99);
+  --color-info-dark: oklch(0.6 0.1466 243.46);
+  --color-info-fg: oklch(0.971 0.013 17.38);
+
+  --color-secondary: var(--color-gray-200);
+  --color-secondary-fg: var(--color-gray-900);
+  --color-secondary-dark: var(--color-black);
+
+  --color-body: rgb(255, 255, 255);
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(20, 20, 20);
+  --color-gray-50: rgb(250, 250, 250);
+  --color-gray-100: rgb(245, 245, 245);
+  --color-gray-150: rgb(235, 235, 235);
+  --color-gray-200: rgb(229, 229, 229);
+  --color-gray-250: rgb(212, 212, 212);
+  --color-gray-300: rgb(200, 200, 200);
+  --color-gray-350: rgb(180, 180, 180);
+  --color-gray-400: rgb(163, 163, 163);
+  --color-gray-450: rgb(140, 140, 140);
+  --color-gray-500: rgb(115, 115, 115);
+  --color-gray-550: rgb(100, 100, 100);
+  --color-gray-600: rgb(82, 82, 82);
+  --color-gray-650: rgb(70, 70, 70);
+  --color-gray-700: rgb(64, 64, 64);
+  --color-gray-750: rgb(55, 55, 55);
+  --color-gray-800: rgb(38, 38, 38);
+  --color-gray-850: rgb(28, 28, 28);
+  --color-gray-900: rgb(23, 23, 23);
+
+
+  --shadow-DEFAULT: 0 3px 20px -5px rgba(0, 0, 0, 0.11);
+  --shadow-lg: 0 5px 40px -10px rgba(0, 0, 0, 0.07);
+  --shadow-xl: 0 6px 35px -7px rgba(0, 0, 0, 0.12);
+
+  --radius-sm: 0.26em;
+  --radius-md: 0.485em;
+  --radius-lg: 0.85em;
+  --radius-xl: 1.3em;
+  --radius: var(--radius-md);
+
+  --font-base: roboto, sans-serif;
+}
+
+.dark-mode {
+
+  --color-body: rgb(24, 24, 24);
+  --color-white: rgb(24, 24, 24);
+  --color-black: rgb(245, 245, 245);
+
+  --color-gray-50: rgb(24, 24, 24);
+  --color-gray-100: rgb(30, 30, 30);
+  --color-gray-150: rgb(36, 36, 36);
+  --color-gray-200: rgb(42, 42, 42);
+  --color-gray-250: rgb(48, 48, 48);
+  --color-gray-300: rgb(54, 54, 54);
+  --color-gray-350: rgb(64, 64, 64);
+  --color-gray-400: rgb(80, 80, 80);
+  --color-gray-450: rgb(165, 166, 166);
+  --color-gray-500: rgb(177, 178, 178);
+  --color-gray-550: rgb(128, 128, 128);
+  --color-gray-600: rgb(144, 144, 144);
+  --color-gray-650: rgb(160, 160, 160);
+  --color-gray-700: rgb(176, 176, 176);
+  --color-gray-750: rgb(192, 192, 192);
+  --color-gray-800: rgb(208, 208, 208);
+  --color-gray-850: rgb(224, 224, 224);
+  --color-gray-900: rgb(240, 240, 240);
+  --border: var(--gray-250);
+
+
+
+  --color-primary-light: rgb(222, 224, 226);
+  --color-primary: rgb(244, 241, 241);
+  --color-primary-dark: rgb(255, 255, 255);
+  --color-primary-fg: rgb(30, 28, 28);
+  --color-primary-fg-light: rgb(43, 42, 42);
+
+  --color-danger-light: rgb(77, 29, 26);
+  --color-danger: rgb(191, 37, 37);
+  --color-danger-dark: rgb(215, 37, 39);
+  --color-danger-fg: rgb(252, 252, 252);
+
+  --color-success-light: rgb(27, 52, 25);
+  --color-success: rgb(21, 146, 50);
+  --color-success-dark: rgb(27, 165, 59);
+  --color-success-fg: rgb(252, 252, 252);
+
+  --color-secondary: var(--gray-200);
+
+  --shadow-dropdown: 0px 0px 1px theme('colors.gray.700');
+  --shadow-offcanvas: 0px 0px 1px theme('colors.gray.700');
+  --shadow-card: 0px 0px 1px theme('colors.gray.700');
+  --shadow-DEFAULT: 0px 0px 1px theme('colors.gray.700');
+  --shadow-lg: 0px 0px 1px theme('colors.gray.700');
+  --shadow-xl: 0px 0px 1px theme('colors.gray.700');
+}
+
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2937;
+  background-color: #f9fafb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  @apply bg-gray-50;
+}
